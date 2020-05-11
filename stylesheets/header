@@ -1,0 +1,47 @@
+header .headline {
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-size: 1.5em; }
+
+header a {
+  text-decoration: none; }
+
+header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out; }
+
+header ul {
+  text-align: center; }
+  header ul li {
+    padding-bottom: 1em; }
+  header ul li:last-child {
+    padding-bottom: 1.5em; }
+
+header .menu-mobile {
+  cursor: pointer;
+  display: block;
+  padding: 28px 20px;
+  user-select: none; }
+  header .menu-mobile .menu-label {
+    text-align: center; }
+
+header .menu-btn {
+  display: none; }
+
+header .menu-btn:checked ~ .menu {
+  max-height: 240px; }
+
+@media screen and (min-width: 575px) {
+  header .menu-mobile {
+    display: none; }
+  header .menu {
+    clear: none;
+    max-height: none; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; }
+    header nav ul li {
+      padding: 1em; } }
